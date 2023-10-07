@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud_App</title>
+    <link rel="stylesheet" href="crud.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <ul class="item-nav">
+                <li>
+                    <a href="">Inicio</a>
+                </li>
+                <li>
+                    <a href="">Juegos</a>
+                </li>
+                <li>
+                    <a href="">Soporte</a>
+                </li>
+                <li>
+                    <a href="">Contacto </a>
+                </li>
+                <li class="li-user">
+                    <a class="a-user" href=""><i class="fa-solid fa-user"></i></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+   <main class="container">
+    <section class="crud">
+        <h1 class="titulo">Soporte tecnico
+        </h1>
+        <form id="Registro" class="formulario">
+            <input type="text" placeholder="Nombre" id="nombre" class="form_info">
+            <input type="email" placeholder="Email" id="correo" class="form_info">
+            <input type="text" placeholder="Solicitud" id="descripcion" class="form_info">
+            <button type="submit" id="submitbutton" class="button button-primario" >Agregar</button>
+        </form>
+        <table class="crudtable">
+        <thead>
+            <tr>
+                <th class="tabla_header">Nombre</th>
+                <th class="tabla_header">E-mail</th>
+                <th class="tabla_header">Descripcion</th>
+                <th class="tabla_header">Acciones</th>
+            </tr>
+        </thead>
+        <tbody id="tabla" class="tabla_body">
+        </tbody>
+        </table>
+    </section>
+   </main>
+   <footer>
+        <div class="div-footer">
+            <a class="a-footer" href=""><i class="fa-brands fa-instagram"></i></a>
+            <a class="a-footer" href=""><i class="fa-brands fa-square-facebook"></i></a>
+            <a class="a-footer" href=""><i class="fa-brands fa-twitter"></i></a>
+            <a class="a-footer" href=""><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+        <div class="div-footer">
+        </div>
+        <div class="div-footer2">
+            <h2>Contacto</h2>
+            <a class="a-footer2" href="">SoporteJueguitos@gmail.com</a>
+            <a class="a-footer2" href="">ComprasJueguitos@gmail.com</a>
+            <a class="a-footer2" href="">+56 9 9837 2561</a>
+        </div>
+        <div class="div-footer2">
+            <h2>Nosotros</h2>
+            <a class="a-footer2" href="">Quienes Somos</a>
+            <a class="a-footer2" href="">Terminos</a>
+            <a class="a-footer2" href="">Condiciones</a>
+        </div>
+   </footer>    
+    <script src="crud.js"></script>  
+    <script src="https://kit.fontawesome.com/69f839ef6d.js" crossorigin="anonymous"></script>  
+</body>
+</html>
